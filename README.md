@@ -2,7 +2,7 @@
 _Coding practices and recommendations for Cisco SEs, by Cisco SEs_
 
 ## Repo Features
-* [Cisco SE Coding Practices Wiki](#wiki)
+* [Cisco SE Coding Practices Wiki](https://github.com/CiscoSE/coding-practices/wiki)
 * [Awesome Lists](#awesome)
 * [Reference Files](#reference-files)
 
@@ -23,4 +23,4 @@ Don't see one that you feel should be there, or want to add to one of these awes
 
 
 ## Reference Files
-This repo will also contain various reference files and code samples in connection with the [Cisco SE Coding Practices Wiki](#wiki) and as otherwise may benefit the Cisco SE community as we work to collect, document and share our coding practices with each other.  Feel free to browse the repo.  Each topical sub-folder should contain a README file that will describe its contents and purpose.
+This repo will also contain various reference files and code samples in connection with the [Cisco SE Coding Practices Wiki](https://github.com/CiscoSE/coding-practices/wiki) and as otherwise may benefit the Cisco SE community as we work to collect, document and share our coding practices with each other.  Feel free to browse the repo.  Each topical sub-folder should contain a README file that will describe its contents and purpose.
