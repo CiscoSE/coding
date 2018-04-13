@@ -1,12 +1,10 @@
 # Scripts to Rule Them All
 
-> You've cloned someone's project code.  Now what?  How do you install the project's dependencies?  How do start up its server?  How do you clean up the project folder and reset it for your next use?
+> You've cloned someone's project code.  Now what?  How do you install the project's dependencies?  How do you start up its server?  How do you clean up the project folder and reset it for your next use?
 
-This is a set of _intent-based scripts_ for use as convention by Cisco SEs in our coding projects.
+This is a set of **intent-based scripts** for use as convention by Cisco SEs in our coding projects.
 
-The scripts could be written in any language; so long as, an appropriate _shebang_ line is included at the top of the script and the intended consumers of the project have the necessary interpreters loaded on their machines.
-
-While the patterns demonstrated in this set of scripts can work for any project based on any language, these particular examples are for Python-based projects.
+The scripts could be written in any language; so long as, an appropriate _shebang_ line is included at the top of the script and the intended consumers of the project have the necessary interpreters loaded on their machines. While the patterns demonstrated in this set of scripts can work for any project based on any language, these particular examples are for Python-based projects.
 
 **You _do not_ have to implement all of these scripts for your project.**  Implement only what your project needs.  The value here is consistency.  If your project needs some "setup" before it can be used, create `script/setup` your project repository and we will know where to find it.
 
