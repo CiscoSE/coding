@@ -5,7 +5,7 @@ _Coding practices for Cisco SEs, by Cisco SEs_
 ## Repo Features
 
 * [Cisco SE Coding Practices Wiki](https://github.com/CiscoSE/coding-practices/wiki)
-* [Awesome Lists](#awesome)
+* [Scripts to Rule Them All](#scripts-to-rule-them-all)
 * [Reference Files](#reference-files)
 
 ## Wiki
@@ -18,11 +18,9 @@ Check out the Cisco SE Coding Practices [Wiki](https://github.com/CiscoSE/coding
 * Info on the recommended _Cisco SE Baseline Toolset_
 * Language and use-case specific practices shared by your peers
 
-## Awesome
+## Scripts to Rule Them All
 
-In the root of this repo you will find `awesome*.md` files containing Cisco SE community recommended "awesome" resources.
-
-Don't see one that you feel should be there, or want to add to one of these awesome lists?  Just follow the standard GitHub workflow to [fork a copy of this repository and submit your changes as a Pull Request](https://guides.github.com/activities/forking/).
+Want to make your coding project easier for others to work with?  Why not adopt our Cisco SE ["Scripts to Rule Them All"](script/) `script/` structure and naming convention?
 
 ## Reference Files
 
