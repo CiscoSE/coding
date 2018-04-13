@@ -1,6 +1,6 @@
 # Scripts to Rule Them All
 
-_You've cloned someone's project code._  Now what?  How do you install the project's dependencies?  How do start up its server?  How do you clean up the project folder and reset it for your next use?
+> You've cloned someone's project code.  Now what?  How do you install the project's dependencies?  How do start up its server?  How do you clean up the project folder and reset it for your next use?
 
 This is a set of _intent-based scripts_ for use as convention by Cisco SEs in our coding projects.
 
@@ -8,32 +8,21 @@ The scripts could be written in any language; so long as, an appropriate _sheban
 
 While the patterns demonstrated in this set of scripts can work for any project based on any language, these particular examples are for Python-based projects.
 
-You _do not_ have to implement all of these scripts for your project.  Implement only what your project needs.  The value here is consistency.  If your project needs some "setup" before it can be used, create `script/setup` your project repository and we will know where to find it.
+**You _do not_ have to implement all of these scripts for your project.**  Implement only what your project needs.  The value here is consistency.  If your project needs some "setup" before it can be used, create `script/setup` your project repository and we will know where to find it.
 
-> The following two sections (and portions of the script descriptions), come straight from the [inspiration](#inspiration) for these scripts.
+_The following two sections (and portions of the script descriptions), come straight from the [inspiration](#inspiration) for these scripts._
 
 ## The Idea
 
-If your scripts are normalized by name across all of your projects, your
-contributors only need to know the pattern, not a deep knowledge of the
-application. This means they can jump into a project and make contributions
-without first learning how to bootstrap the project or how to get its tests to
-run.
+If your scripts are normalized by name across all of your projects, your contributors only need to know the pattern, not a deep knowledge of the application. This means they can jump into a project and make contributions without first learning how to bootstrap the project or how to get its tests to run.
 
-The intricacies of things like test commands and bootstrapping can be managed by
-maintainers, who have a rich understanding of the project's domain. Individual
-contributors need only to know the patterns and can simply run the commands and
-get what they expect.
+The intricacies of things like test commands and bootstrapping can be managed by maintainers, who have a rich understanding of the project's domain. Individual contributors need only to know the patterns and can simply run the commands and get what they expect.
 
 ## The Scripts
 
-Each of these scripts is responsible for a unit of work. This way they can be
-called from other scripts.
+Each of these scripts is responsible for a unit of work. This way they can be called from other scripts.
 
-This not only cleans up a lot of duplicated effort, it means contributors can do
-the things they need to do, without having an extensive fundamental knowledge of
-how the project works. Lowering friction like this is key to faster and happier
-contributions.
+This not only cleans up a lot of duplicated effort, it means contributors can do the things they need to do, without having an extensive fundamental knowledge of how the project works. Lowering friction like this is key to faster and happier contributions.
 
 The following is a list of scripts and their primary responsibilities.
 
@@ -44,17 +33,17 @@ The following is a list of scripts and their primary responsibilities.
 
 | Script | Intent |
 |:--|:--|
-| [`script/bootstrap`](#script-bootstrap) | Verify system dependencies |
-| [`script/installdeps`](#script-installdeps) | Install project dependencies |
-| [`script/clean`](#script-clean) | Clean-up project artifacts |
-| [`script/setup`](#script-setup) | Setup or reset the project to an initial state |
-| [`script/update`](#script-update) | Update the project after a fresh pull |
-| [`script/test`](#script-test) | Run the project's test suite |
-| [`script/build`](#script-build) | Build the project's product(s) |
-| [`script/ci`](#script-ci) | Continuous integration script |
-| [`script/server`](#script-server) | Control project servers and services |
-| [`script/console`](#script-console) | Access the project's console |
-| [`script/demo`](#script-demo) | Start running a demo for the project |
+| [`script/bootstrap`](#scriptbootstrap) | Verify system dependencies |
+| [`script/installdeps`](#scriptinstalldeps) | Install project dependencies |
+| [`script/clean`](#scriptclean) | Clean-up project artifacts |
+| [`script/setup`](#scriptsetup) | Setup or reset the project to an initial state |
+| [`script/update`](#scriptupdate) | Update the project after a fresh pull |
+| [`script/test`](#scripttest) | Run the project's test suite |
+| [`script/build`](#scriptbuild) | Build the project's product(s) |
+| [`script/ci`](#scriptci) | Continuous integration script |
+| [`script/server`](#scriptserver) | Control project servers and services |
+| [`script/console`](#scriptconsole) | Access the project's console |
+| [`script/demo`](#scriptdemo) | Start running a demo for the project |
 
 ### script/bootstrap
 
@@ -139,7 +128,7 @@ the requested environment.
 
 [`script/demo`][demo] is used to set up the project and begin running a demo of its capabilities.
 
-This script should call [`script/setup`][setup] or [`script/update`][update] as needed to prepare the project for demonstration; as well as, calling [`script/serve`][serve], [`script/console`][console], and etc. as needed to begin the demonstration.
+This script should call [`script/setup`][setup] or [`script/update`][update] as needed to prepare the project for demonstration; as well as, calling [`script/server`][server], [`script/console`][console], and etc. as needed to begin the demonstration.
 
 The goal is to setup the project, initialize and start any needed services, and make everything ready for an individual to demonstrate the capabilities of the project.
 
